@@ -1,0 +1,50 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 LXI H 4000h
+\par LXI D 5000h
+\par MVI C 64h
+\par MOV A M
+\par LOOP: INX H
+\par CMP M
+\par JNC JMP1
+\par MOV A M
+\par JMP1: DCR C
+\par JNZ LOOP
+\par STAX D
+\par RST 5
+\par 
+\par }
+<End Codes>
+20
+1| 4000| 01
+2| 4001| 02
+3| 4002| 03
+6| 4014| 14
+11| 5000| 00
+<End UserData>
+26
+1| 8000| 21
+2| 8001| 00
+3| 8002| 40
+4| 8003| 11
+5| 8004| 00
+6| 8005| 50
+7| 8006| 0E
+8| 8007| 64
+9| 8008| 7E
+10| 8009| 23
+11| 800A| BE
+12| 800B| DA
+13| 800C| 0F
+14| 800D| 80
+15| 800E| 7E
+16| 800F| 0D
+17| 8010| C2
+18| 8011| 09
+19| 8012| 80
+20| 8013| 12
+21| 8014| EF
+<End HexData>
+Write a program to find the largest number from a block of 100 bytes.
+<End Comment>

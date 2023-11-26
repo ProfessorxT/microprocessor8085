@@ -1,0 +1,54 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 LXI H 2000h
+\par LXI D 3000h
+\par MVI C 0Ah
+\par LOOP: MOV A M
+\par DAA
+\par STAX D
+\par INX H
+\par INX D
+\par DCR C
+\par JNZ LOOP
+\par RST 5
+\par \cf0 
+\par }
+<End Codes>
+20
+1| 2000| 01
+2| 2001| 0A
+3| 2002| 0B
+4| 2009| 08
+5| 200A| 09
+8| 3000| 01
+9| 3001| 10
+10| 3002| 11
+11| 3003| 06
+12| 3004| 06
+13| 3009| 0E
+14| 300A| 00
+<End UserData>
+20
+1| 8000| 21
+2| 8001| 00
+3| 8002| 20
+4| 8003| 11
+5| 8004| 00
+6| 8005| 30
+7| 8006| 0E
+8| 8007| 0A
+9| 8008| 7E
+10| 8009| 27
+11| 800A| 12
+12| 800B| 23
+13| 800C| 13
+14| 800D| 0D
+15| 800E| C2
+16| 800F| 08
+17| 8010| 80
+18| 8011| EF
+<End HexData>
+Convert 8 bit binary number into valid BCD.
+
+<End Comment>

@@ -1,0 +1,23 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 LXI H 4000h
+\par LXI D 5000h
+\par MVI C 64h
+\par MOV A M
+\par LOOP: INX H
+\par CMP M
+\par JC JMP1
+\par MOV A M
+\par JMP1: DCR C
+\par JNZ LOOP
+\par STAX D
+\par RST 5\cf0\fs20 
+\par }
+<End Codes>
+20
+<End UserData>
+20
+<End HexData>
+Write a program to find the smallest number from a block of 100 bytes
+<End Comment>

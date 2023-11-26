@@ -1,0 +1,56 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 LXI H 2000h
+\par LXI B 3000h
+\par LXI D 4000h
+\par LOOP: LDAX B
+\par ADD M
+\par DAA
+\par STAX D
+\par INX H
+\par INX B
+\par INX D
+\par MOV A L
+\par CPI 0Ah
+\par JNZ LOOP
+\par RST 5
+\par \cf0 
+\par }
+<End Codes>
+31
+1| 2000| 01
+4| 200A| 05
+11| 3000| 01
+14| 300A| 01
+19| 4000| 02
+21| 400A| 00
+<End UserData>
+28
+1| 8000| 21
+2| 8001| 00
+3| 8002| 20
+4| 8003| 01
+5| 8004| 00
+6| 8005| 30
+7| 8006| 11
+8| 8007| 00
+9| 8008| 40
+10| 8009| 0A
+11| 800A| 86
+12| 800B| 27
+13| 800C| 12
+14| 800D| 23
+15| 800E| 03
+16| 800F| 13
+17| 8010| 7D
+18| 8011| FE
+19| 8012| 0A
+20| 8013| C2
+21| 8014| 09
+22| 8015| 80
+23| 8016| EF
+<End HexData>
+Write a program to add two blocks of BCD numbers. (Assume 10-10 bytes in each
+block)
+<End Comment>

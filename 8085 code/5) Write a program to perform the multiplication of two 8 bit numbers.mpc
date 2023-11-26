@@ -1,0 +1,30 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 MVI E 05h
+\par MVI B 04h
+\par LOOP: ADD E
+\par DCR B
+\par JNZ LOOP
+\par STA 2050h
+\par HLT\cf0 
+\par }
+<End Codes>
+20
+1| 2050| 00
+<End UserData>
+20
+1| 8000| 1E
+2| 8001| 05
+3| 8002| 06
+4| 8003| 04
+5| 8004| 83
+6| 8005| 05
+7| 8006| C2
+8| 8007| 04
+9| 8008| 80
+10| 8009| 76
+<End HexData>
+5) Write a program to perform the multiplication of two 8 bit numbers
+
+<End Comment>

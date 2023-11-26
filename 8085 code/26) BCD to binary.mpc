@@ -1,0 +1,62 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 MVI B 20h
+\par MVI D 04h
+\par MVI E 0Ah
+\par MOV A B
+\par ANI 0Fh
+\par MOV C A
+\par MOV A B
+\par ANI F0h
+\par ROTATE: RRC
+\par DCR D
+\par JNZ ROTATE
+\par MOV H A
+\par XRA A
+\par MULTI: ADD H
+\par DCR E
+\par JNZ MULTI
+\par ADD C
+\par STA 3000h
+\par RST 5
+\par \cf0 
+\par }
+<End Codes>
+20
+3| 3000| 14
+<End UserData>
+345
+1| 8000| 06
+2| 8001| 20
+3| 8002| 16
+4| 8003| 04
+5| 8004| 1E
+6| 8005| 0A
+7| 8006| 78
+8| 8007| E6
+9| 8008| 0F
+10| 8009| 4F
+11| 800A| 78
+12| 800B| E6
+13| 800C| F0
+14| 800D| 0F
+15| 800E| 15
+16| 800F| C2
+17| 8010| 0D
+18| 8011| 80
+19| 8012| 67
+20| 8013| AF
+21| 8014| 84
+22| 8015| 1D
+23| 8016| C2
+24| 8017| 14
+25| 8018| 80
+26| 8019| 81
+27| 801A| 32
+28| 801B| 00
+29| 801C| 30
+30| 801D| EF
+<End HexData>
+Convert 8 bit BCD number into binary
+<End Comment>

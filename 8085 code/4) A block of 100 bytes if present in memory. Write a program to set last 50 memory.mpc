@@ -1,0 +1,35 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 LXI H 2000h
+\par MVI E 32h
+\par DAD D
+\par LOOP: MVI M FFh
+\par INX H
+\par DCR E
+\par JNZ LOOP
+\par HLT\cf0 
+\par }
+<End Codes>
+20
+<End UserData>
+20
+1| 8000| 21
+2| 8001| 00
+3| 8002| 20
+4| 8003| 1E
+5| 8004| 32
+6| 8005| 19
+7| 8006| 36
+8| 8007| FF
+9| 8008| 23
+10| 8009| 1D
+11| 800A| C2
+12| 800B| 06
+13| 800C| 80
+14| 800D| 76
+<End HexData>
+4) A block of 100 bytes if present in memory. Write a program to set last 50 memory
+locations of this block. (It should be FFH)
+
+<End Comment>

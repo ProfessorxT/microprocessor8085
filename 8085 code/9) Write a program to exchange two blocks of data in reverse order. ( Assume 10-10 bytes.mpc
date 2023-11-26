@@ -1,0 +1,67 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 LXI H 2000h
+\par LXI D 3009h
+\par MVI C 0Ah
+\par LOOP: LDAX D
+\par MOV B M
+\par MOV M A
+\par MOV A B
+\par STAX D
+\par INX H
+\par DCX D
+\par DCR C
+\par JNZ LOOP
+\par RST 5\cf0 
+\par }
+<End Codes>
+29
+1| 2000| 1A
+2| 2001| 19
+3| 2002| 18
+4| 2003| 17
+5| 2004| 16
+6| 2005| 15
+7| 2006| 14
+8| 2007| 13
+9| 2008| 12
+10| 2009| 11
+14| 3000| 0A
+15| 3001| 09
+16| 3002| 08
+17| 3003| 07
+18| 3004| 06
+19| 3005| 05
+20| 3006| 04
+21| 3007| 03
+22| 3008| 02
+23| 3009| 01
+24| 300A| 1B
+<End UserData>
+21
+1| 8000| 21
+2| 8001| 00
+3| 8002| 20
+4| 8003| 11
+5| 8004| 09
+6| 8005| 30
+7| 8006| 0E
+8| 8007| 0A
+9| 8008| 1A
+10| 8009| 46
+11| 800A| 77
+12| 800B| 78
+13| 800C| 12
+14| 800D| 23
+15| 800E| 1B
+16| 800F| 0D
+17| 8010| C2
+18| 8011| 08
+19| 8012| 80
+20| 8013| EF
+<End HexData>
+9) Write a program to exchange two blocks of data in reverse order. ( Assume 10-10 bytes
+in each block)
+
+<End Comment>

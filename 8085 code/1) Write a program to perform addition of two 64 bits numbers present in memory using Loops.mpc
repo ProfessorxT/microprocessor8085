@@ -1,0 +1,84 @@
+2000
+{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 LXI H 4000h
+\par LXI B 5000h
+\par LXI D 6000h
+\par STC
+\par CMC
+\par LOOP: LDAX B
+\par ADC M
+\par STAX D
+\par INX H
+\par INX B
+\par INX D
+\par MOV A E
+\par CPI 08h
+\par JNZ LOOP
+\par MVI A 00h
+\par ADC A
+\par STAX D
+\par HLT\cf0 
+\par }
+<End Codes>
+31
+1| 4000| F1
+2| 4001| F2
+3| 4002| F3
+4| 4003| F4
+5| 4004| F5
+6| 4005| F6
+7| 4006| F7
+8| 4007| F8
+10| 5000| 01
+11| 5001| 02
+12| 5002| 03
+13| 5003| 04
+14| 5004| 05
+15| 5005| 06
+16| 5006| 07
+17| 5007| 08
+18| 5008| 00
+19| 6000| F2
+20| 6001| F5
+21| 6002| F7
+22| 6003| F9
+23| 6004| FB
+24| 6005| FD
+25| 6006| FF
+26| 6007| 01
+27| 6008| 00
+<End UserData>
+97
+1| 2000| 21
+2| 2001| 00
+3| 2002| 40
+4| 2003| 01
+5| 2004| 00
+6| 2005| 50
+7| 2006| 11
+8| 2007| 00
+9| 2008| 60
+10| 2009| 37
+11| 200A| 3F
+12| 200B| 0A
+13| 200C| 8E
+14| 200D| 12
+15| 200E| 23
+16| 200F| 03
+17| 2010| 13
+18| 2011| 7B
+19| 2012| FE
+20| 2013| 08
+21| 2014| C2
+22| 2015| 0B
+23| 2016| 20
+24| 2017| 3E
+25| 2018| 00
+26| 2019| 8F
+27| 201A| 12
+28| 201B| 76
+<End HexData>
+1st) Write a program to perform addition of two 64 bits numbers present in memory using Loops
+
+<End Comment>

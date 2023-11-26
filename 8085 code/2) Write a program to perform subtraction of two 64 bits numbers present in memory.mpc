@@ -1,0 +1,84 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 LXI H 3000h
+\par LXI B 2000h
+\par LXI D 4000h
+\par STC
+\par CMC
+\par LOOP: LDAX B
+\par SBB M
+\par STAX D
+\par INX H
+\par INX B
+\par INX D
+\par MOV A E
+\par CPI 08h
+\par JNZ LOOP
+\par HLT\cf0 
+\par }
+<End Codes>
+46
+1| 2000| 0A
+2| 2001| 0A
+3| 2002| 01
+4| 2003| 00
+5| 2004| 00
+6| 2005| 00
+7| 2006| 00
+8| 2007| 00
+9| 2008| 00
+10| 2009| 00
+11| 200A| 00
+16| 3000| 01
+17| 3001| 01
+18| 3002| 01
+19| 3003| 00
+20| 3004| 00
+21| 3005| 00
+22| 3006| 00
+23| 3007| 00
+24| 3008| 00
+25| 3009| 00
+32| 4000| 09
+33| 4001| 08
+34| 4002| FF
+35| 4003| FF
+36| 4004| FF
+37| 4005| FF
+38| 4006| FF
+39| 4007| FF
+40| 4008| FF
+41| 4009| 00
+<End UserData>
+137
+1| 8000| 21
+2| 8001| 00
+3| 8002| 30
+4| 8003| 01
+5| 8004| 00
+6| 8005| 20
+7| 8006| 11
+8| 8007| 00
+9| 8008| 40
+10| 8009| 37
+11| 800A| 3F
+12| 800B| 0A
+13| 800C| 9E
+14| 800D| 12
+15| 800E| 23
+16| 800F| 03
+17| 8010| 13
+18| 8011| 7B
+19| 8012| FE
+20| 8013| 03
+21| 8014| C2
+22| 8015| 0B
+23| 8016| 80
+24| 8017| 76
+<End HexData>
+2) Write a program to perform subtraction of two 64 bits numbers present in memory
+using Loops
+
+
+<End Comment>

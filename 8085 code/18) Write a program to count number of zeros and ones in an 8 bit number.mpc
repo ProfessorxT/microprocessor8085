@@ -1,0 +1,51 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 MVI A 02h
+\par MVI C 08h
+\par LXI H 0000h
+\par LOOP: RRC
+\par JC ONE
+\par INR H
+\par JMP CHECK
+\par ONE: INR L
+\par CHECK: DCR C
+\par JNZ LOOP
+\par SHLD 3000h
+\par RST 5
+\par 
+\par \cf0 
+\par }
+<End Codes>
+20
+4| 3000| 01
+5| 3001| 07
+<End UserData>
+25
+1| 8000| 3E
+2| 8001| 02
+3| 8002| 0E
+4| 8003| 08
+5| 8004| 21
+6| 8005| 00
+7| 8006| 00
+8| 8007| 0F
+9| 8008| DA
+10| 8009| 0F
+11| 800A| 80
+12| 800B| 24
+13| 800C| C3
+14| 800D| 10
+15| 800E| 80
+16| 800F| 2C
+17| 8010| 0D
+18| 8011| C2
+19| 8012| 07
+20| 8013| 80
+21| 8014| 22
+22| 8015| 00
+23| 8016| 30
+24| 8017| EF
+<End HexData>
+Write a program to count number of zeros and ones in an 8 bit number
+<End Comment>

@@ -1,0 +1,86 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 LXI H 2000h
+\par LXI B 3000h
+\par LXI D 4000h
+\par LOOP: MOV A M
+\par RRC
+\par JNC EVEN
+\par RLC
+\par STAX B
+\par INX B
+\par JMP CHECK
+\par EVEN: RLC
+\par STAX D
+\par INX D
+\par CHECK: INX H
+\par MOV A L
+\par CPI 14h
+\par JNZ LOOP
+\par RST 5
+\par \cf0 
+\par }
+<End Codes>
+37
+1| 2000| 20
+2| 2001| 01
+3| 2002| 02
+4| 2003| 03
+5| 2004| 04
+6| 2005| 05
+7| 2006| 06
+8| 2007| 07
+9| 2008| 08
+10| 2009| 09
+13| 3000| 01
+14| 3001| 03
+15| 3002| 05
+16| 3003| 07
+17| 3004| 09
+18| 3005| 00
+19| 3006| 00
+26| 4000| 20
+27| 4001| 02
+28| 4002| 04
+29| 4003| 06
+30| 4004| 08
+31| 4005| 00
+32| 4006| 00
+33| 4007| 00
+<End UserData>
+32
+1| 8000| 21
+2| 8001| 00
+3| 8002| 20
+4| 8003| 01
+5| 8004| 00
+6| 8005| 30
+7| 8006| 11
+8| 8007| 00
+9| 8008| 40
+10| 8009| 7E
+11| 800A| 0F
+12| 800B| D2
+13| 800C| 14
+14| 800D| 80
+15| 800E| 07
+16| 800F| 02
+17| 8010| 03
+18| 8011| C3
+19| 8012| 17
+20| 8013| 80
+21| 8014| 07
+22| 8015| 12
+23| 8016| 13
+24| 8017| 23
+25| 8018| 7D
+26| 8019| FE
+27| 801A| 14
+28| 801B| C2
+29| 801C| 09
+30| 801D| 80
+31| 801E| EF
+<End HexData>
+Write a program to sort even and odd numbers from a block of 20 bytes
+<End Comment>

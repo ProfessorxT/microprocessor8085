@@ -1,0 +1,58 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 MVI C 05h
+\par LXI H 2000h
+\par LXI D 2009h
+\par 
+\par LOOP: MOV B M
+\par LDAX D
+\par MOV M A
+\par MOV A B
+\par STAX D
+\par INX H
+\par DCX D
+\par DCR C
+\par JNZ LOOP
+\par HLT\cf0 
+\par }
+<End Codes>
+20
+1| 2000| 01
+2| 2001| 02
+3| 2002| 03
+4| 2003| 04
+5| 2004| 05
+6| 2005| 06
+7| 2006| 07
+8| 2007| 08
+9| 2008| 09
+10| 2009| 0A
+13| 0000| 00
+14| 0001| 00
+<End UserData>
+22
+1| 8000| 0E
+2| 8001| 05
+3| 8002| 21
+4| 8003| 00
+5| 8004| 20
+6| 8005| 11
+7| 8006| 09
+8| 8007| 20
+9| 8008| 46
+10| 8009| 1A
+11| 800A| 77
+12| 800B| 78
+13| 800C| 12
+14| 800D| 23
+15| 800E| 1B
+16| 800F| 0D
+17| 8010| C2
+18| 8011| 08
+19| 8012| 80
+20| 8013| 76
+<End HexData>
+7) Write a program to arrange the numbers in reverse order. (Assume 10 numbers are
+present in memory. Save the numbers in the reverse order in the same memory space.)
+<End Comment>

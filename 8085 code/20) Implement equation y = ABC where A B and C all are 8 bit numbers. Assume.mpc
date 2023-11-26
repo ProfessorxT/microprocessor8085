@@ -1,0 +1,63 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 MVI A 02h
+\par MVI B 02h
+\par MVI C 02h
+\par MOV D A
+\par XRA A
+\par MULT: ADD D
+\par DCR B
+\par JNZ MULT
+\par MVI E 00h
+\par DIVISION: SUB C
+\par INR E
+\par 
+\par CMP C
+\par JNC DIVISION
+\par STA 3001h
+\par MOV A E
+\par STA 3000h
+\par RST 5
+\par \cf0 
+\par }
+<End Codes>
+20
+10| 3000| 02
+11| 3001| 00
+<End UserData>
+110
+1| 8000| 3E
+2| 8001| 02
+3| 8002| 06
+4| 8003| 02
+5| 8004| 0E
+6| 8005| 02
+7| 8006| 57
+8| 8007| AF
+9| 8008| 82
+10| 8009| 05
+11| 800A| C2
+12| 800B| 08
+13| 800C| 80
+14| 800D| 1E
+15| 800E| 00
+16| 800F| 91
+17| 8010| 1C
+18| 8011| B9
+19| 8012| D2
+20| 8013| 0F
+21| 8014| 80
+22| 8015| 32
+23| 8016| 01
+24| 8017| 30
+25| 8018| 7B
+26| 8019| 32
+27| 801A| 00
+28| 801B| 30
+29| 801C| EF
+<End HexData>
+Implement equation y = AB/C where A, B and C all are 8 bit numbers. Assume
+multiplication of A and B is an 8 bit result while, y is also of 8 bits.
+
+<End Comment>

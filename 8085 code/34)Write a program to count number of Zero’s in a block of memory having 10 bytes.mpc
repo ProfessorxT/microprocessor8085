@@ -1,0 +1,63 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 LXI H 3000h
+\par MVI C 0Ah
+\par MVI D 00h
+\par LOOP: MOV A M
+\par CPI 00h
+\par JNZ NOTZERO
+\par INR D
+\par NOTZERO: INX H
+\par DCR C
+\par JNZ LOOP
+\par MOV A D
+\par STA 6000h
+\par RST 5
+\par \cf0 
+\par }
+<End Codes>
+20
+1| 3000| 00
+2| 3001| 10
+3| 3002| A1
+4| 3003| A1
+5| 3004| 00
+6| 3005| 00
+7| 3006| 00
+8| 3007| 59
+9| 3008| 95
+10| 3009| 00
+11| 300A| 00
+15| 6000| 05
+<End UserData>
+35
+1| 8000| 21
+2| 8001| 00
+3| 8002| 30
+4| 8003| 0E
+5| 8004| 0A
+6| 8005| 16
+7| 8006| 00
+8| 8007| 7E
+9| 8008| FE
+10| 8009| 00
+11| 800A| C2
+12| 800B| 0E
+13| 800C| 80
+14| 800D| 14
+15| 800E| 23
+16| 800F| 0D
+17| 8010| C2
+18| 8011| 07
+19| 8012| 80
+20| 8013| 7A
+21| 8014| 32
+22| 8015| 00
+23| 8016| 60
+24| 8017| EF
+<End HexData>
+Write a program to count number of Zero’s in a block of memory having 10 bytes
+
+
+<End Comment>

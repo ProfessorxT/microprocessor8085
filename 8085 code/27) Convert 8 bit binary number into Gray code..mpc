@@ -1,0 +1,51 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 LXI H 2000h
+\par LXI B 3000h
+\par MVI D 0Ah
+\par LOOP: STC
+\par CMC
+\par MOV A M
+\par RAR
+\par XRA M
+\par STAX B
+\par INX H
+\par INX B
+\par DCR D
+\par JNZ LOOP
+\par RST 5
+\par \cf0 
+\par }
+<End Codes>
+20
+1| 2000| A0
+7| 3000| F0
+<End UserData>
+22
+1| 8000| 21
+2| 8001| 00
+3| 8002| 20
+4| 8003| 01
+5| 8004| 00
+6| 8005| 30
+7| 8006| 16
+8| 8007| 0A
+9| 8008| 37
+10| 8009| 3F
+11| 800A| 7E
+12| 800B| 1F
+13| 800C| AE
+14| 800D| 02
+15| 800E| 23
+16| 800F| 03
+17| 8010| 15
+18| 8011| C2
+19| 8012| 08
+20| 8013| 80
+21| 8014| EF
+<End HexData>
+Convert 8 bit binary number into Gray code.
+
+
+<End Comment>

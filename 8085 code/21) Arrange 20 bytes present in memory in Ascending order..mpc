@@ -1,0 +1,80 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 MVI B 14h
+\par \fs20 LOOP: LXI H 2000h\fs20 
+\par MOV C B
+\par COMPARE: MOV A M
+\par INX H
+\par CMP M
+\par JC BIG
+\par MOV D M
+\par MOV M A
+\par DCX H
+\par MOV M D
+\par INX H
+\par BIG: DCR C
+\par JNZ COMPARE
+\par DCR B
+\par JNZ LOOP
+\par RST 5\cf0 
+\par }
+<End Codes>
+30
+1| 2000| 00
+2| 2001| 00
+3| 2002| 00
+4| 2003| 00
+5| 2004| 00
+6| 2005| 00
+7| 2006| 00
+8| 2007| 00
+9| 2008| 00
+10| 2009| 00
+11| 200A| 00
+12| 200B| 00
+13| 200C| 00
+14| 200D| 05
+15| 200E| 0E
+16| 200F| 0F
+17| 2010| 10
+18| 2011| 11
+19| 2012| C0
+20| 2013| FD
+21| 2014| FF
+22| 2015| 00
+23| 2016| 00
+24| 2017| 00
+25| 2018| 00
+26| 2019| 00
+<End UserData>
+62
+1| 8000| 06
+2| 8001| 14
+3| 8002| 21
+4| 8003| 00
+5| 8004| 20
+6| 8005| 48
+7| 8006| 7E
+8| 8007| 23
+9| 8008| BE
+10| 8009| DA
+11| 800A| 11
+12| 800B| 80
+13| 800C| 56
+14| 800D| 77
+15| 800E| 2B
+16| 800F| 72
+17| 8010| 23
+18| 8011| 0D
+19| 8012| C2
+20| 8013| 06
+21| 8014| 80
+22| 8015| 05
+23| 8016| C2
+24| 8017| 02
+25| 8018| 80
+26| 8019| EF
+<End HexData>
+Arrange 20 bytes present in memory in Ascending order
+<End Comment>

@@ -1,0 +1,61 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 LXI B 3000h
+\par LXI H 0000h
+\par MVI D 00h
+\par LOOP: LDAX B
+\par MOV E A
+\par DAD D
+\par INX B
+\par MOV A C
+\par CPI 0Ah
+\par JNZ LOOP
+\par SHLD 300Ah
+\par RST 5
+\par 
+\par \cf0 
+\par }
+<End Codes>
+20
+1| 3000| 01
+2| 3001| 02
+3| 3002| 03
+4| 3003| 04
+5| 3004| 05
+6| 3005| 06
+7| 3006| 07
+8| 3007| 08
+9| 3008| 09
+10| 3009| 10
+12| 300A| 3D
+13| 300B| 00
+<End UserData>
+29
+1| 8000| 01
+2| 8001| 00
+3| 8002| 30
+4| 8003| 21
+5| 8004| 00
+6| 8005| 00
+7| 8006| 16
+8| 8007| 00
+9| 8008| 0A
+10| 8009| 5F
+11| 800A| 19
+12| 800B| 03
+13| 800C| 79
+14| 800D| FE
+15| 800E| 0A
+16| 800F| C2
+17| 8010| 08
+18| 8011| 80
+19| 8012| 22
+20| 8013| 0A
+21| 8014| 30
+22| 8015| EF
+<End HexData>
+A block of 10 bytes is present in memory. Add all these 10 bytes and store the result
+after the block. Assume 16 bit result comes
+
+<End Comment>

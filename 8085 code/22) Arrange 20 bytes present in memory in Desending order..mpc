@@ -1,0 +1,29 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 MVI B 14h
+\par LOOP: LXI H 2000h
+\par MOV C B
+\par COMPARE: MOV A M
+\par INX H
+\par CMP M
+\par JNC SMALL
+\par MOV D M
+\par MOV M A
+\par DCX H
+\par MOV M D
+\par INX H
+\par SMALL: DCR C
+\par JNZ COMPARE
+\par DCR B
+\par JNZ LOOP
+\par RST 5\cf0 
+\par \fs20 
+\par }
+<End Codes>
+20
+<End UserData>
+20
+<End HexData>
+Arrange 20 bytes present in memory in Descending order.
+<End Comment>

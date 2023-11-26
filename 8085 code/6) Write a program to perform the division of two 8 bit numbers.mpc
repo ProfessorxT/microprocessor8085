@@ -1,0 +1,49 @@
+8000
+{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\li195\cf1\f0\fs20 MVI A 09h
+\par MVI B 02h
+\par MVI E 00h
+\par LOOP: SUB B
+\par INR E
+\par CMP B
+\par JNC LOOP
+\par STA 3001h
+\par MOV A E
+\par STA 3000h
+\par 
+\par HLT\cf0 
+\par 
+\par }
+<End Codes>
+20
+1| 3000| 04
+2| 3001| 01
+<End UserData>
+28
+1| 8000| 3E
+2| 8001| 09
+3| 8002| 06
+4| 8003| 02
+5| 8004| 1E
+6| 8005| 00
+7| 8006| 90
+8| 8007| 1C
+9| 8008| B8
+10| 8009| D2
+11| 800A| 06
+12| 800B| 80
+13| 800C| 32
+14| 800D| 01
+15| 800E| 30
+16| 800F| 7B
+17| 8010| 32
+18| 8011| 00
+19| 8012| 30
+20| 8013| 76
+<End HexData>
+6) Write a program to perform the division of two 8 bit numbers
+
+
+
+<End Comment>
